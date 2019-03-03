@@ -1,30 +1,65 @@
-body{
-    background: black no-repeat;
-}
-
-h1, h3{
-    text-align: center;
+#myInput {
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #333030;
+  margin-bottom: 12px;
+  }
+  
+  .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon {
+    position: relative;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    padding: 10px 9px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon input[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
     color: #fff;
-}
-
-table{
-    width: 100%;
-}
-
-table tr td{
-    width: 40%;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+  
+  #tableJasmine {
+    border-collapse: all; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid rgb(24, 21, 21); /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  #tableJasmine td{
     text-align: center;
-}
-
-#submitButton{
-    color: red;
-    cursor: pointer;
-}
-
-#submitButton:hover{
-    color: red;
-}
-
-.textCenter{
-    text-align: center;
-}
+    border: 1px solid black;
+  }
+  #tableJasmine th  {
+    text-align: center; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #tableJasmine tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  #tableJasmine tr.Myheader, #tableJasmine tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #108076;
+  }
