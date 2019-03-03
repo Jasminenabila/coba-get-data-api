@@ -1,0 +1,30 @@
+body{
+    background: black no-repeat;
+}
+
+h1, h3{
+    text-align: center;
+    color: #fff;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    width: 40%;
+    text-align: center;
+}
+
+#submitButton{
+    color: red;
+    cursor: pointer;
+}
+
+#submitButton:hover{
+    color: red;
+}
+
+.textCenter{
+    text-align: center;
+}
